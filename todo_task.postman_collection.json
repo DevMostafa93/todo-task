@@ -1,0 +1,216 @@
+{
+	"info": {
+		"_postman_id": "50ecd7be-bfed-42d0-8dd0-d17b90992d5e",
+		"name": "todo task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "creat todo",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"task\",\n    \"description\":\"todo task\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/todos",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"todos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update todo",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\":\"task1\",\n    \"description\":\"todo task\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/todos/bda2cbcb-344f-4f8b-aec3-ba9d5ac2ec09",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"todos",
+						"bda2cbcb-344f-4f8b-aec3-ba9d5ac2ec09"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete todo",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/todos/bda2cbcb-344f-4f8b-aec3-ba9d5ac2ec09",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"todos",
+						"bda2cbcb-344f-4f8b-aec3-ba9d5ac2ec09"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mark Todo as completed",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/todos/d070e102-25ff-4ca1-b8a8-51ce8c70acd3/isCompolete",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"todos",
+						"d070e102-25ff-4ca1-b8a8-51ce8c70acd3",
+						"isCompolete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Todo's Items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/todos/d070e102-25ff-4ca1-b8a8-51ce8c70acd3/items",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"todos",
+						"d070e102-25ff-4ca1-b8a8-51ce8c70acd3",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Todo's Item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"task\",\n    \"description\":\"descr\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/todos/d070e102-25ff-4ca1-b8a8-51ce8c70acd3/items",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"todos",
+						"d070e102-25ff-4ca1-b8a8-51ce8c70acd3",
+						"items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE Todo's Item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/todos/d070e102-25ff-4ca1-b8a8-51ce8c70acd3/items/62313578-33e3-4a7d-81ee-00d18fbccf49",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"todos",
+						"d070e102-25ff-4ca1-b8a8-51ce8c70acd3",
+						"items",
+						"62313578-33e3-4a7d-81ee-00d18fbccf49"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Mark Todo's Item as completed",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/todos/d070e102-25ff-4ca1-b8a8-51ce8c70acd3/items/eebc0359-1444-4485-a3a4-f9fac9da6889/isCompoleted",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"todos",
+						"d070e102-25ff-4ca1-b8a8-51ce8c70acd3",
+						"items",
+						"eebc0359-1444-4485-a3a4-f9fac9da6889",
+						"isCompoleted"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Todo's Item.",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\":\"task\",\n    \"description\":\"descr1\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/todos/d070e102-25ff-4ca1-b8a8-51ce8c70acd3/items/eebc0359-1444-4485-a3a4-f9fac9da6889",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"todos",
+						"d070e102-25ff-4ca1-b8a8-51ce8c70acd3",
+						"items",
+						"eebc0359-1444-4485-a3a4-f9fac9da6889"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
